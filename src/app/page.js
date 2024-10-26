@@ -11,14 +11,14 @@ const bots = [
     id: 1,
     name: 'Nekozu Music',
     description: 'Downlaod your favourite music from many platform with our bots!.',
-    image: '/down.svg?height=100&width=100',
+    image: '/down.svg?height=150&width=150',
     link: 'https://t.me/NekoMuBot',
   },
   {
     id: 2,
     name: 'Nekozu Translate',
     description: 'Translate text between multiple languages instantly. With also voice to text and translate from photo!',
-    image: '/trans.svg?height=100&width=100',
+    image: '/trans.svg?height=150&width=150',
     link: 'https://t.me/NekoTransBot',
   },
 ]
