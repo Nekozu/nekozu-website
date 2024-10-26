@@ -169,7 +169,7 @@ export default function HomePage() {
             {/* Footer */}
             <footer className="bg-blue-600 text-white py-8">
               <div className="container mx-auto text-center">
-                <p>&copy; 2024 TelegramBotCo. All rights reserved.</p>
+                <p>&copy; 2024 Nekozu Network. All rights reserved.</p>
               </div>
             </footer>
           </motion.main>
