@@ -4,21 +4,21 @@ import React, { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Button, Card, CardContent, CardMedia, Typography, CircularProgress, Avatar } from '@mui/material'
 import Link from 'next/link'
-import { Send as TelegramIcon, Menu as MenuIcon } from '@mui/icons-material'
+import { Send as TelegramIcon, Menu as MenuIcon, ShoppingCart as ShopIcon } from '@mui/icons-material'
 
 const bots = [
   {
     id: 1,
     name: 'Nekozu Music',
     description: 'Download your favourite music from many platform with our bots!.',
-    image: '/down.svg?height=150&width=150',
+    image: '/down.svg?height=70&width=70',
     link: 'https://t.me/NekoMuBot',
   },
   {
     id: 2,
     name: 'Nekozu Translate',
     description: 'Translate text between multiple languages instantly. With also voice to text and translate from photo!',
-    image: '/trans.svg?height=150&width=150',
+    image: '/trans.svg?height=70&width=70',
     link: 'https://t.me/NekoTransBot',
   },
 ]
@@ -114,6 +114,7 @@ export default function HomePage() {
                   initial={{ y: -20, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ delay: 0.6 }}
+                  className="space-x-4"
                 >
                   <Button
                     variant="contained"
@@ -125,6 +126,17 @@ export default function HomePage() {
                     rel="noopener noreferrer"
                   >
                     Our Channel
+                  </Button>
+                  <Button
+                    variant="contained"
+                    className="bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out transform hover:scale-105"
+                    size="large"
+                    startIcon={<ShopIcon />}
+                    href="https://ko-fi.com/nekozu/shop"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Our Kofi Shop
                   </Button>
                 </motion.div>
               </div>
